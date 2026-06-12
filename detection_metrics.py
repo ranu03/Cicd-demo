@@ -32,7 +32,7 @@ def validate_event(event: DetectionEvent) -> bool:
         return False
     if not event.label or not event.label.strip():
         return False
-    if not (0.0 <= event.confidence <= 1.0):
+    if not (0.0 <= event.confidence <= 2.0):
         return False
     return True
 
